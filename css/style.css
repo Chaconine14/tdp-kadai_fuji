@@ -1465,6 +1465,11 @@ body.is-open {
   padding: 80px;
   margin-top: 120px;
 }
+@media (max-width: 768px) {
+  .p-philosophy {
+    padding: 40px 24px;
+  }
+}
 .p-philosophy .c-ttl {
   margin-top: 0;
 }
@@ -1479,21 +1484,45 @@ body.is-open {
     font-size: 3.2rem;
   }
 }
+@media (max-width: 768px) {
+  .p-philosophy__ttl {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+}
 
 .p-philosophy__en {
   text-align: center;
   padding-top: 20px;
+}
+@media (max-width: 768px) {
+  .p-philosophy__en {
+    text-align: left;
+  }
 }
 
 .p-guidelines {
   margin-bottom: 160px;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .p-guidelines {
+    margin-bottom: 120px;
+  }
+}
 
 .p-guidelines__item {
   display: flex;
   justify-content: flex-start;
   gap: 32px;
+}
+@media (max-width: 768px) {
+  .p-guidelines__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .p-guidelines__cont {
@@ -1509,6 +1538,11 @@ body.is-open {
     padding: 0 120px;
   }
 }
+@media (max-width: 768px) {
+  .p-guidelines__cont {
+    padding: 0 24px;
+  }
+}
 
 .p-guidelines__image {
   background-color: #597130;
@@ -1520,16 +1554,33 @@ body.is-open {
   align-items: center;
   aspect-ratio: 1/1;
 }
+@media (max-width: 768px) {
+  .p-guidelines__image {
+    width: 100px;
+    height: 100px;
+  }
+}
 .p-guidelines__image img {
   width: 50px;
   height: auto;
   aspect-ratio: 1/1;
+}
+@media (max-width: 768px) {
+  .p-guidelines__image img {
+    width: 65px;
+  }
 }
 
 .p-guidelines__txt h3 {
   color: #597130;
   font-size: 2.4rem;
   padding-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .p-guidelines__txt h3 {
+    text-align: center;
+    padding-bottom: 16px;
+  }
 }
 
 .p-company {
@@ -1579,6 +1630,11 @@ body.is-open {
   border-bottom: 1px solid #D4CBC1;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  .p-company__table td {
+    border-bottom: none;
+  }
+}
 .p-company__table th {
   color: #597130;
   text-align: left;
@@ -1612,6 +1668,12 @@ body.is-open {
 .p-company__table td {
     display: block;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-company__table tr {
+    padding: 4px 0;
   }
 }
 

@@ -47,6 +47,10 @@
     td {
         border-bottom: 1px solid variables.$color-light-beige;
         font-weight: 400;
+
+        @include variables.media-sp {
+            border-bottom: none;
+        }
     }
 
     th {
@@ -88,5 +92,12 @@
     @include variables.media-sp {
         display: block;
         width: 100%;
+    }
+}
+
+
+.p-company__table tr {
+    @include variables.media-sp {
+        padding: 4px 0;
     }
 }
