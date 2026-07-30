@@ -1,0 +1,30 @@
+@use "../../foundation/variables";
+
+.c-btn__orange,
+.c-btn__white {
+    font-size: 2.0rem;
+    border-radius: 16px;
+    padding: 1.6rem 4.0rem;
+    width: fit-content;
+    transition: .3s;
+    display: block;
+}
+
+.c-btn__orange {
+    color: variables.$color-white;
+    background-color: variables.$color-orange;
+}
+
+.c-btn__orange:hover {
+    background-color: variables.$color-dark-orange;
+}
+
+.c-btn__white {
+    color: variables.$color-black;
+    background-color: variables.$color-white;
+}
+
+.c-btn__white:hover {
+    background-color: variables.$color-light-beige;
+
+}

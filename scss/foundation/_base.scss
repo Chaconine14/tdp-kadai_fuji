@@ -1,0 +1,56 @@
+@use "../foundation/variables";
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "M PLUS Rounded 1c", sans-serif, YuGothic, "Yu Gothic", "游ゴシック体", "游ゴシック", "Hiragino Kaku Gothic ProN", "HiraKakuPro-W3", "メイリオ", Meiryo, Verdana, sans-serif;
+    background-color: variables.$color-white;
+
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$color-black;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: variables.$color-black;
+}
+
+small {
+    color: variables.$color-black;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}

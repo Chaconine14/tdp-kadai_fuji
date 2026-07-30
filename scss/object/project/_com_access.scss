@@ -1,0 +1,152 @@
+@use "../../foundation/variables";
+
+
+.p-access {
+    padding: 0 200px;
+
+    @include variables.media-md {
+        padding: 0 120px;
+    }
+
+    @include variables.media-tb {
+        padding: 40px 80px;
+    }
+
+    @include variables.media-sp {
+        padding: 40px 24px 60px;
+    }
+
+}
+
+.p-access__wrap {
+    margin: 80px 0;
+
+    @include variables.media-sp {
+        margin: 40px 0;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+        color: variables.$color-green;
+        padding-bottom: 16px;
+
+        @include variables.media-sp {
+            font-size: 2rem;
+            padding-bottom: 8px;
+        }
+
+    }
+}
+
+.p-access__honsya-ttl {
+    border-bottom: 3px solid variables.$color-green;
+
+}
+
+.p-access_aco-ttl {
+    border-bottom: 3px solid variables.$color-green;
+}
+
+
+.p-access__item {
+    padding: 40px 0 40px 40px;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    border-bottom: solid 1px variables.$color-light-beige;
+
+    @include variables.media-md {
+        grid-template-columns: 200px 1fr;
+
+    }
+
+    @include variables.media-tb {
+        padding: 40px;
+    }
+
+    @include variables.media-sp {
+        grid-template-columns: 1fr;
+        padding: 16px 8px;
+        gap: 8px;
+    }
+
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 400;
+
+        @include variables.media-sp {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+
+    p {
+        white-space: nowrap;
+    }
+}
+
+.p-access__map {
+    min-height: 180px;
+    max-height: 300px;
+    width: 100%;
+    border-radius: 16px;
+
+    @include variables.media-md {
+        grid-column: 1 / -1;
+    }
+}
+
+
+//=======アコーディオン============
+
+
+.p-access_aco-ttl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-access__icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.p-access__icon span {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: variables.$color-green;
+    transform: translate(-50%, -50%);
+    transition: transform .3s;
+}
+
+/* 縦棒 */
+.p-access__icon span:first-child {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* 横棒 */
+.p-access__icon span:last-child {
+    transform: translate(-50%, -50%);
+}
+
+
+.p-access__list {
+    display: none;
+}
+
+
+.p-access__icon span:first-child {
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: transform .3s ease;
+}
+
+.p-access_aco-ttl.is-open .p-access__icon span:first-child {
+    transform: translate(-50%, -50%) rotate(0deg);
+}

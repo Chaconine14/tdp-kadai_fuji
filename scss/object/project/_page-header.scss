@@ -1,0 +1,35 @@
+@use "../../foundation/variables";
+
+.p-page-header {
+    height: 280px;
+    background: center center / cover url(../../../images/page-header.jpg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include variables.media-sp {
+        height: 160px;
+    }
+}
+
+.p-page-header__en,
+.p-page-header__title {
+    color: variables.$color-white;
+}
+
+.p-page-header__en {
+    font-size: 1.6rem;
+
+    @include variables.media-sp {
+        font-size: 1.2rem;
+    }
+}
+
+.p-page-header__title {
+    font-size: 4.0rem;
+
+    @include variables.media-sp {
+        font-size: 2.4rem;
+    }
+}

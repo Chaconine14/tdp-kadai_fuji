@@ -1,0 +1,138 @@
+@use "../../foundation/variables";
+
+.p-mv {
+    position: relative;
+    height: calc(100vh - 80px);
+}
+
+.p-mv__hero {
+    height: 100%;
+}
+
+.p-mv__hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include variables.media-tb {
+        object-position: 70% center;
+    }
+}
+
+.p-mv__title-area,
+.p-mv__lead-body {
+    position: absolute;
+    left: 10%;
+}
+
+.p-mv__title-area {
+    top: 28%;
+}
+
+.p-mv__lead {
+    position: static;
+}
+
+.p-mv__lead img {
+    display: none;
+}
+
+.p-mv__lead-body {
+    top: 60%;
+}
+
+
+@include variables.media-sp {
+
+    .p-mv {
+        height: calc(100vh - 64px);
+    }
+
+    .p-mv__hero,
+    .p-mv__lead {
+        position: relative;
+    }
+
+    .p-mv__hero {
+        height: 60%;
+
+
+    }
+
+    .p-mv__lead {
+        height: 40%;
+        transform: unset;
+    }
+
+    .p-mv__hero img,
+    .p-mv__lead img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .p-mv__title-area,
+    .p-mv__lead-body {
+        position: absolute;
+        left: 32px;
+        right: 32px;
+    }
+
+    .p-mv__title-area {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .p-mv__lead-body {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+// .p-mv {
+//     height: 100vh;
+//     background: center center / cover url(../../../images/top/top_mv.jpg) no-repeat;
+//     display: flex;
+//     align-items: center;
+
+//     @include variables.media-tb {
+//         background-position-x: 70%;
+//     }
+
+// }
+
+.p-mv__title {
+    font-size: 6.4rem;
+    font-weight: 700;
+    margin: 0;
+
+    @include variables.media-tb {
+        font-size: 4.8rem;
+    }
+
+    @include variables.media-sp {
+        font-size: 2.4rem;
+    }
+
+    span {
+        display: inline;
+        background-color: #FCFBF899;
+    }
+}
+
+.p-mv__txtarea {
+    padding-left: 10%;
+}
+
+.p-mv__txt {
+    @include variables.media-tb {
+        background-color: #FCFBF899;
+    }
+
+    @include variables.media-sp {
+        background-color: unset;
+        color: variables.$color-white;
+    }
+
+}

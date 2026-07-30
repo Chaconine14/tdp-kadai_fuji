@@ -1,0 +1,136 @@
+@use "../foundation/variables";
+
+.l-footer {
+    padding: 60px 10% 20px;
+
+    @include variables.media-tb {
+        padding: 40px 60px;
+    }
+
+    @include variables.media-tb {
+        padding: 40px 24px 20px;
+    }
+}
+
+.l-footer__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include variables.media-tb {
+        flex-wrap: wrap;
+    }
+
+    @include variables.media-sp {
+        flex-direction: column;
+    }
+
+}
+
+.l-footer__profile a img {
+    height: 50px;
+    width: auto;
+
+
+    @include variables.media-tb {
+        height: auto;
+        width: 160px;
+    }
+
+    @include variables.media-sp {
+        width: 120px;
+    }
+}
+
+.l-footer__profile address {
+    font-style: normal;
+    margin: 60px 0 120px 0;
+
+    p {
+        margin: 0;
+    }
+
+    @include variables.media-tb {
+        margin: 32px 0 48px;
+    }
+
+    @include variables.media-sp {
+        margin: 16px 0;
+    }
+
+}
+
+.l-footer__nav {
+    font-size: 2.0rem;
+    line-height: 1.8;
+
+    @include variables.media-sp {
+        font-size: 1.6rem;
+        border-top: 1px solid variables.$color-light-beige;
+        padding-top: 16px;
+    }
+}
+
+.l-footer__nav>ul {
+    display: flex;
+    gap: 32px;
+
+    @include variables.media-tb {
+        margin-top: 0;
+        gap: 20px;
+    }
+
+    @include variables.media-sp {
+        flex-wrap: wrap;
+        column-gap: 64px;
+        row-gap: 20px;
+    }
+}
+
+.l-footer__nav a {
+    transition: .3s;
+}
+
+.l-footer__nav a:hover {
+    color: variables.$color-light-beige;
+}
+
+.l-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include variables.media-sp {
+        flex-direction: column;
+        align-items: stretch; // ← これを追加
+        margin-top: 80px;
+    }
+}
+
+
+.l-footer__bottom,
+.l-footer__bottom small {
+    font-size: 1.2rem;
+
+}
+
+.l-footer__bottom__links a {
+    display: block;
+    margin-top: 8px;
+    transition: .3s;
+
+    @include variables.media-sp {
+        margin-top: 0;
+    }
+}
+
+.l-footer__bottom__links a:hover {
+    color: variables.$color-light-beige;
+}
+
+.l-footer__bottom small {
+    @include variables.media-sp {
+        align-self: center;
+        text-align: center;
+        margin-top: 40px;
+    }
+}

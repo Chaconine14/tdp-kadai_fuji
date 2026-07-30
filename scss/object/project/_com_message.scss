@@ -1,0 +1,50 @@
+@use "../../foundation/variables";
+
+
+.p-message {
+    padding: 0 clamp(24px, -89.25px + 30.2003vw, 220px);
+}
+
+.p-message__cont {
+    display: flex;
+    gap: 40px;
+
+    @include variables.media-md {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 16px;
+
+    }
+}
+
+.p-message__image {
+    flex: 2;
+
+    @include variables.media-md {
+        width: 60%;
+    }
+
+}
+
+.p-message__txt {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.p-message__cont p+p {
+    margin-top: 1em;
+}
+
+.p-message__txt-area__name {
+    display: block;
+    text-align: right;
+}

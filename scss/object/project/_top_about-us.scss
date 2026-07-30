@@ -1,0 +1,21 @@
+@use "../../foundation/variables";
+
+
+.p-about-us {
+    margin-bottom: 160px;
+
+    @include variables.media-sp {
+        margin-bottom: 80px;
+    }
+}
+
+
+.p-about-us__txt {
+    text-align: center;
+    margin-bottom: 80px;
+
+    @include variables.media-sp {
+        text-align-last: left;
+        margin: 0 24px;
+    }
+}

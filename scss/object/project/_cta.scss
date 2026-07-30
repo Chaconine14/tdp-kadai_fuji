@@ -1,0 +1,106 @@
+@use "../../foundation/variables";
+
+
+.p-cta-2col {
+    display: flex;
+
+    @include variables.media-sp {
+        flex-direction: column;
+    }
+}
+
+.p-cta__contact,
+.p-cta__recruit {
+    background: center center / cover no-repeat;
+    position: relative;
+}
+
+.p-cta__contact {
+    background-image: url(../../../images/cta_contact.jpg);
+    border-right: solid 1px variables.$color-white;
+
+    @include variables.media-sp {
+        border-right: none;
+        border-bottom: solid 1px variables.$color-white;
+    }
+}
+
+.p-cta__recruit {
+    background-image: url(../../../images/cta_recruit.jpg);
+}
+
+.p-cta__contact::before,
+.p-cta__recruit::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #597130D9;
+    z-index: 1;
+}
+
+.p-cta__inner {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.p-cta {
+    padding: 80px 110px;
+    text-align: center;
+
+    @include variables.media-tb {
+        padding: 40px 32px;
+    }
+
+    @include variables.media-tb {
+        padding: 40px 24px;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 28px;
+        margin-top: 0;
+
+        @include variables.media-tb {
+            font-size: 2.4rem;
+        }
+    }
+
+    h3 {
+        font-size: 2.0rem;
+        margin-bottom: 1.6rem;
+        font-weight: 400;
+
+        @include variables.media-tb {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+.p-cta h2,
+.p-cta h3,
+.p-cta p {
+    color: variables.$color-white;
+}
+
+.p-cta__contact a {
+    margin: 0 auto;
+}
+
+.p-cta__recruit__btn {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+
+    @include variables.media-tb {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,161 @@
+@use "../../foundation/variables";
+
+.p-case__card {
+    display: flex;
+    padding: 0 20%;
+    gap: 32px;
+    justify-content: center;
+
+    @include variables.media-sp {
+
+        flex-direction: column;
+        background-color: variables.$color-white-beige;
+        border-radius: 16px;
+        align-items: center;
+        padding: 16px;
+    }
+}
+
+.p-case__card>img {
+    width: 50%;
+    height: 480px;
+    border-radius: 16px;
+    object-fit: cover;
+    flex: 3;
+
+    @include variables.media-sp {
+        width: 100%;
+        aspect-ratio: 1 / 1; // 正方形
+        object-fit: cover; // はみ出した部分をトリミング
+    }
+}
+
+.p-case__card__txt-area {
+    color: variables.$color-black;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    min-width: 300px;
+
+    @include variables.media-sp {
+        min-width: 100%;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+
+        @include variables.media-sp {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    dt {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        white-space: nowrap;
+        width: 10rem;
+        flex-shrink: 0; // 縮まない
+
+    }
+
+    dd {
+        font-size: 1.6rem;
+        flex: 1;
+        white-space: nowrap;
+    }
+
+}
+
+.p-case__info {
+    border-bottom: 1px solid variables.$color-beige;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.p-case__comment {
+    background-color: #FB87331A;
+    border-radius: 16px;
+    padding: 24px 36px;
+    position: relative;
+    margin-top: auto;
+
+    h4 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: variables.$color-orange;
+        margin-bottom: 20px;
+
+        @include variables.media-sp {
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+.p-case__comment::before {
+    content: "";
+    position: absolute;
+    top: 24px; // 上の余白
+    bottom: 24px; // 下の余白（これで上下の高さいっぱいに伸びます）
+    left: 16px; // 左からの位置
+    width: 4px;
+    background-color: variables.$color-orange;
+    border-radius: 2px;
+}
+
+.p-case__comment__icon {
+    display: none;
+
+    @include variables.media-sp {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+
+}
+
+.p-case__comment__icon span {
+    position: absolute;
+    top: 13px;
+    left: 100%;
+    width: 16px;
+    height: 2px;
+    background: variables.$color-black;
+    transform: translate(-50%, -50%);
+    transition: transform .3s;
+}
+
+/* 縦棒 */
+.p-case__comment__icon span:first-child {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* 横棒 */
+.p-case__comment__icon span:last-child {
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+@include variables.media-sp {
+    .p-case__comment p {
+        display: none;
+        padding-top: 20px;
+    }
+
+    .p-case__comment.is-open {
+        .p-case__comment__icon span:first-child {
+            opacity: 0; // 縦線を消す
+        }
+    }
+}

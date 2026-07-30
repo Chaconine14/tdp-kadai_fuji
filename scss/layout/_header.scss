@@ -1,0 +1,233 @@
+@use "../foundation/variables";
+
+
+.l-header {
+    height: 80px;
+    display: flex;
+    font-size: 2.0rem;
+    line-height: 1.5;
+    padding: 0 120px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include variables.media-tb {
+        height: 64px;
+        padding-left: 16px;
+    }
+}
+
+h1 {
+    img {
+        width: 200px;
+        height: auto;
+
+        @include variables.media-tb {
+            width: 160px;
+        }
+
+        @include variables.media-sp {
+            height: 32px;
+            width: auto;
+        }
+
+    }
+}
+
+.l-header__nav {
+    >ul {
+        display: flex;
+        // gap: 3.2rem;
+        height: 100%;
+
+    }
+
+    a {
+        transition: .3s;
+    }
+}
+
+.l-header__nav>ul>li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 1.6rem;
+
+    @include variables.media-tb {
+        padding: 0 .8rem;
+    }
+}
+
+.l-header__nav>ul>li:last-child {
+    padding: 0 0 0 1.6rem;
+}
+
+
+.l-header__nav>ul>li>a {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+
+
+.l-header__nav__sub {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: variables.$color-white;
+    display: none;
+    z-index: 1000;
+
+    li {
+        border-top: 1px solid variables.$color-light-beige;
+        transition: .3s;
+    }
+
+    li a {
+        white-space: nowrap;
+        display: block;
+        padding: 1.6rem;
+    }
+}
+
+.l-header__nav a:hover {
+    color: variables.$color-light-beige;
+}
+
+.l-header__nav__sub li:hover {
+    background-color: variables.$color-light-beige;
+}
+
+.l-header__nav__sub a:hover {
+    color: variables.$color-white-beige;
+}
+
+
+.l-header__nav {
+    @include variables.media-tb {
+        display: none;
+    }
+}
+
+
+// ===============
+// ハンバーガーメニュー
+// ===============
+
+
+.l-header__hamburger {
+    display: none;
+
+    @include variables.media-tb {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: variables.$color-green;
+        border: none;
+        // position: fixed;
+        position: absolute;
+        right: 16px;
+        top: 12px;
+        z-index: 1000;
+    }
+}
+
+.l-header__hamburger span {
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: variables.$color-white;
+    position: absolute;
+    left: 12px;
+    transform: translate(0, -50%);
+    border-radius: 1px;
+    transition: .3s;
+}
+
+
+.l-header__hamburger {
+
+    span:first-child {
+        top: 35%;
+    }
+
+    span:nth-child(2) {
+        top: 50%;
+    }
+
+    span:last-child {
+        top: 65%;
+    }
+}
+
+.l-header__hamburger.close span:first-child {
+    top: 50%;
+    transform: translate(0, -50%) rotate(225deg);
+}
+
+.l-header__hamburger.close span:nth-child(2) {
+    transform: translate(0, -50%) rotate(45deg);
+    opacity: 0;
+}
+
+.l-header__hamburger.close span:last-child {
+    top: 50%;
+    transform: translate(0, -50%) rotate(315deg);
+}
+
+
+/* ドロワー */
+.l-header__drawer {
+
+    display: none;
+
+    @include variables.media-tb {
+        display: block;
+        background: rgba(245, 242, 235, 0.95);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        padding: 10% 0 10% 20%;
+        overflow: auto;
+        transform: translate(100%, 0);
+        transition: .3s;
+        z-index: 100;
+    }
+}
+
+.l-header__drawer.is-open {
+    transform: translate(0, 0);
+}
+
+
+.l-header__drawer ul li {
+    margin-top: 0;
+}
+
+.l-header__drawer ul li a {
+    display: block;
+    color: variables.$color-black;
+    font-size: 2.0rem;
+    text-decoration: none;
+    margin: 30px 0;
+}
+
+.l-header__drawer__sub {
+    padding-left: 5%;
+}
+
+.l-header__drawer li:has(> ul)>a {
+    margin-bottom: 0;
+}
+
+.l-header__drawer .l-header__drawer__sub li a {
+    margin: 8px 0 0;
+}
+
+body.is-open {
+    overflow: hidden;
+}

@@ -1,0 +1,86 @@
+@use "../../foundation/variables";
+
+.c-anchor-nav {
+    margin: 68px 0 120px 0;
+
+    @include variables.media-tb {
+
+        margin: 40px 0;
+    }
+}
+
+.c-anchor-nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include variables.media-tb {
+
+        padding-inline: clamp(24px, -89.25px + 30.2003vw, 220px);
+        ; // 左右の余白
+        column-gap: 20px; // 列間の余白
+        row-gap: 16px; // 行間の余白
+        justify-content: flex-start;
+
+    }
+
+}
+
+.c-anchor-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    @include variables.media-tb {
+        padding: 8px 0;
+        flex: 0 0 calc((100% - 24px) / 2);
+        justify-content: flex-start;
+        margin-top: 0;
+
+    }
+
+    a {
+        white-space: nowrap;
+    }
+}
+
+.c-anchor-nav__item:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: .2rem;
+    height: 2.0rem;
+    margin: 0 4.0rem;
+    background: url("../images/anchor-link_dots.png") center / contain no-repeat;
+
+    @include variables.media-tb {
+        content: none;
+    }
+}
+
+.c-anchor-nav__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.6rem;
+    color: variables.$color-black;
+    white-space: nowrap;
+
+    @include variables.media-tb {
+        flex-direction: row-reverse;
+    }
+
+}
+
+
+
+.c-anchor-nav__link img {
+    display: block;
+    width: 32px; // アイコンサイズ
+    height: auto;
+
+    @include variables.media-tb {
+        width: 16px;
+    }
+}

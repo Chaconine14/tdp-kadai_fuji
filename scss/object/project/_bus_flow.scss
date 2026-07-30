@@ -1,0 +1,125 @@
+@use "../../foundation/variables";
+
+
+.p-flow {
+    background-color: variables.$color-light-green;
+    padding: 80px clamp(120px, calc(8.94vw + 28.4px), 200px);
+    margin: 80px 0;
+
+    .c-ttl {
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    @include variables.media-sp {
+        padding: 40px 24px 8px;
+        margin: 80px 0 40px;
+    }
+}
+
+.p-flow__item {
+    display: flex;
+    background-color: variables.$color-white;
+    border: 1px solid variables.$color-dark-beige;
+    padding: 40px;
+    margin: 50px 0;
+    gap: 5%;
+    border-radius: 16px;
+    position: relative;
+
+    @include variables.media-sp {
+        flex-direction: column;
+        margin: 0 0 32px 0;
+        padding: 16px;
+    }
+}
+
+.p-flow__num-area {
+
+    border-right: 1px solid #594C3E;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include variables.media-sp {
+        border-right: none;
+        border-bottom: 1px solid variables.$color-light-beige;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding: 0;
+        gap: 8px;
+    }
+
+    span {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 4rem;
+        font-weight: 700;
+
+        @include variables.media-sp {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.p-flow__txt-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    img {
+        width: 60px;
+        height: auto;
+
+        @include variables.media-sp {
+            display: none;
+        }
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 16px;
+
+        @include variables.media-sp {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.p-flow__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -32px;
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 32px solid variables.$color-green;
+}
+
+.p-flow__txt-area__sp span img {
+    display: none;
+
+    @include variables.media-sp {
+        display: block;
+        max-height: 60px;
+    }
+
+}
+
+.p-flow__txt-area__sp span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}

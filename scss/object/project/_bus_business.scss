@@ -1,0 +1,57 @@
+@use "../../foundation/variables";
+
+.p-business {
+    padding: 0 220px;
+    margin-bottom: 160px;
+
+    @include variables.media-tb {
+        padding: 0 clamp(24px, -89.25px + 30.2003vw, 220px);
+    }
+
+    @include variables.media-sp {
+        margin-bottom: 80px;
+    }
+
+
+    p {
+        width: 55%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+
+        @include variables.media-tb {
+            width: 100%;
+        }
+
+    }
+}
+
+.p-business__images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    @include variables.media-sp {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.p-business__images figure {
+    width: 320px;
+    margin: 0;
+}
+
+.p-business__images img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.p-card__caption {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 2.0rem;
+    color: variables.$color-black;
+
+}

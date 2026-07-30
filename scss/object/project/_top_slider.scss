@@ -1,0 +1,39 @@
+@use "../../foundation/variables";
+
+.p-top-slider {
+    overflow: hidden;
+}
+
+.p-top-slider__track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.p-top-slider__track img {
+    width: 320px;
+    border-radius: 16px;
+
+
+    @include variables.media-tb {
+        width: 240px;
+    }
+
+    @include variables.media-sp {
+        width: 124px;
+        margin-top: 40px;
+    }
+
+
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,147 @@
+@use "../../foundation/variables";
+
+
+.p-top-card__p-left {
+    padding-left: 10%;
+    margin-bottom: 120px;
+
+    @include variables.media-tb {
+        padding-left: 8%;
+        margin-bottom: 80px;
+    }
+
+    @include variables.media-sp {
+        padding: 0 24px;
+        margin-bottom: 40px;
+    }
+}
+
+.p-top-card__img-right {
+    display: flex;
+    overflow: hidden;
+    border-radius: 24px 0 0 24px;
+    background-color: variables.$color-green;
+
+    @include variables.media-sp {
+        flex-direction: column-reverse;
+        border-radius: 24px;
+    }
+
+}
+
+.p-top-card__content {
+    // padding: 80px;
+    // display: flex;
+    // flex-direction: column;
+    // width: 30%;
+    flex: 5;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+
+    @include variables.media-tb {
+        padding: 40px;
+    }
+
+    @include variables.media-sp {
+        padding: 20px 16px;
+    }
+
+}
+
+
+
+
+
+.p-top-card__content h2,
+.p-top-card__content p {
+    color: variables.$color-white;
+}
+
+
+.p-top-card__content h2 {
+    margin: 0;
+    font-size: 3.2rem;
+
+    @include variables.media-sp {
+        margin-bottom: 20px;
+        font-size: 2.4rem;
+    }
+
+}
+
+.p-top-card__content p {
+    margin-bottom: 80px;
+
+    @include variables.media-sp {
+        margin-bottom: 20px;
+    }
+}
+
+.p-top-card__content a {
+    margin: auto auto 0 auto;
+}
+
+
+.p-top-card__image {
+    // width: 841px;
+    flex: 8;
+}
+
+.p-top-card__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    @include variables.media-sp {
+        width: calc(100% - 12px);
+    }
+}
+
+.p-top-card__img-right .p-top-card__image img {
+    border-radius: 24px 0 0 24px;
+
+    @include variables.media-sp {
+        border-radius: 24px;
+        border: 6px solid variables.$color-green;
+    }
+}
+
+.p-top-card__p-right {
+    padding-right: 10%;
+    margin-bottom: 120px;
+
+    @include variables.media-tb {
+        padding-right: 8%;
+        margin-bottom: 80px;
+
+    }
+
+    @include variables.media-sp {
+        padding: 0 24px;
+        margin-bottom: 40px;
+
+    }
+}
+
+.p-top-card__img-left {
+    display: flex;
+    overflow: hidden;
+    border-radius: 0 24px 24px 0;
+    background-color: variables.$color-green;
+
+    @include variables.media-sp {
+        flex-direction: column;
+        border-radius: 24px;
+    }
+}
+
+.p-top-card__img-left .p-top-card__image img {
+    border-radius: 0 24px 24px 0;
+
+    @include variables.media-sp {
+        border-radius: 24px;
+        border: 6px solid variables.$color-green;
+
+    }
+}

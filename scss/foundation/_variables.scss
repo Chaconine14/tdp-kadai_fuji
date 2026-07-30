@@ -1,0 +1,38 @@
+//***************************************
+//カラーパレット
+//***************************************
+
+$color-green: #597130;
+$color-orange: #FB8733;
+$color-white: #FCFBF8;
+$color-black: #2E2C2A;
+$color-dark-beige: #594C3E;
+$color-beige: #8A847E;
+$color-light-beige: #D4CBC1;
+$color-white-beige: #F5F2EB;
+$color-light-green: #F2F5EE;
+$color-dark-orange: #E9721D;
+
+
+
+//***************************************
+//レスポンシブ　メディアクエリ設定
+//***************************************
+
+@mixin media-md {
+    @media (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin media-tb {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-sp {
+    @media (max-width: 768px) {
+        @content;
+    }
+}

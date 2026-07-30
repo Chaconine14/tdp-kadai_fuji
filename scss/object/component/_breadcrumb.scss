@@ -1,0 +1,28 @@
+@use "../../foundation/variables";
+
+.c-breadcrumb {
+    padding: 32px 0 0 10%;
+
+    @include variables.media-sp {
+        padding: 16px 0 0 24px;
+    }
+}
+
+.c-breadcrumb__list {
+    display: flex;
+    list-style: none;
+    font-size: 1.2rem;
+    color: variables.$color-black;
+
+
+    span {
+        padding: 0 .5rem;
+    }
+
+}
+
+.c-breadcrumb__list a {
+    text-decoration: underline;
+    color: variables.$color-black;
+
+}

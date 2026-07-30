@@ -1,0 +1,51 @@
+@use "../../foundation/variables";
+
+.p-guidelines {
+    margin-bottom: 160px;
+    width: 100%;
+}
+
+.p-guidelines__item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.p-guidelines__cont {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include variables.media-tb {
+        width: auto;
+        padding: 0 120px;
+    }
+}
+
+
+.p-guidelines__image {
+    background-color: variables.$color-green;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+
+    img {
+        width: 50px;
+        height: auto;
+        aspect-ratio: 1 / 1; // 正方形
+    }
+}
+
+.p-guidelines__txt {
+    h3 {
+        color: variables.$color-green;
+        font-size: 2.4rem;
+        padding-bottom: 24px;
+    }
+}
