@@ -1,0 +1,134 @@
+@use "../../foundation/variables";
+
+
+.p-tabs_wrap {
+    padding: 160px 200px;
+
+    @include variables.media-md {
+        padding: 120px;
+    }
+
+    @include variables.media-tb {
+        padding: 80px;
+    }
+
+    @include variables.media-sp {
+        padding: 40px 24px;
+    }
+}
+
+.p-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include variables.media-sp {
+        gap: 16px;
+        justify-content: center;
+
+    }
+}
+
+.p-tab {
+    flex: 1;
+    padding: 16px 0;
+    border-radius: 16px;
+    background-color: variables.$color-white-beige;
+    color: variables.$color-black;
+    border: 1px solid variables.$color-beige;
+    font-size: 2rem;
+
+    @include variables.media-sp {
+        flex: unset;
+        padding: 8px 16px;
+        font-size: 1.6rem;
+    }
+
+}
+
+.p-tab.is-active {
+    background-color: variables.$color-dark-beige;
+    color: variables.$color-white;
+    border: 1px solid variables.$color-dark-beige;
+
+}
+
+.p-tab-content {
+    padding: 40px 20px;
+
+    @include variables.media-sp {
+        padding: 0;
+    }
+}
+
+.p-tab-content_ttl {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 40px;
+
+    @include variables.media-sp {
+        padding-top: 40px;
+        padding-bottom: 16px;
+    }
+
+
+    h2 {
+        font-size: 2.4rem;
+
+        @include variables.media-sp {
+            font-size: 1.6rem;
+        }
+
+    }
+}
+
+.p-tab__table {
+    font-size: 1.6rem;
+    padding: 40px 20px;
+    border-collapse: collapse;
+    width: 100%;
+
+    @include variables.media-sp {
+        padding: 0;
+    }
+
+    th,
+    td {
+        border: 1px solid variables.$color-light-beige;
+        padding: 8px 16px;
+    }
+
+    th {
+        background-color: variables.$color-white-beige;
+        text-align: left;
+        min-width: 250px;
+
+        @include variables.media-tb {
+            min-width: 160px;
+        }
+    }
+}
+
+.p-tab-content a {
+    margin: 40px auto 0;
+}
+
+.p-tabs_wrap,
+.p-tab__table tbody,
+.p-tab__table tr,
+.p-tab__table th,
+.p-tab__table td {
+    @include variables.media-sp {
+        display: block;
+    }
+}
+
+.p-tab-content {
+    display: none;
+}
+
+.p-tab-content.is-active {
+    display: block;
+}

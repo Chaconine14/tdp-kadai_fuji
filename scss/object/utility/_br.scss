@@ -1,0 +1,10 @@
+@use "../../foundation/variables";
+
+
+.u-br_md {
+    display: none;
+
+    @include variables.media-md {
+        display: inline;
+    }
+}

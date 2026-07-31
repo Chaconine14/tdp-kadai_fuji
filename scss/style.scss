@@ -42,9 +42,11 @@
 @use "object/project/com_history";
 @use "object/project/com_access";
 @use "object/project/pri_privacy";
+@use "object/project/req_tab";
 
 
 //-------------------------------
 //Utility
 //-------------------------------
 @use "object/utility/text-align";
+@use "object/utility/br";

@@ -104,3 +104,18 @@
         align-items: center;
     }
 }
+
+
+.p-cta-1col {
+    display: block;
+
+    .p-cta__recruit__btn {
+        @include variables.media-tb {
+            flex-direction: row;
+        }
+
+        @include variables.media-sp {
+            flex-direction: column;
+        }
+    }
+}
