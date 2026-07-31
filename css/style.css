@@ -2158,6 +2158,14 @@ body.is-open {
     font-size: 1.6rem;
   }
 }
+.p-tab-content_ttl img {
+  height: 32px;
+}
+@media (max-width: 768px) {
+  .p-tab-content_ttl img {
+    height: 24px;
+  }
+}
 
 .p-tab__table {
   font-size: 1.6rem;
@@ -2188,6 +2196,12 @@ body.is-open {
 
 .p-tab-content a {
   margin: 40px auto 0;
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .p-tab-content a {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 768px) {

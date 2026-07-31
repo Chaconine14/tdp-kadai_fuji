@@ -82,6 +82,14 @@
         }
 
     }
+
+    img {
+        height: 32px;
+
+        @include variables.media-sp {
+            height: 24px;
+        }
+    }
 }
 
 .p-tab__table {
@@ -113,6 +121,11 @@
 
 .p-tab-content a {
     margin: 40px auto 0;
+    font-size: 1.6rem;
+
+    @include variables.media-sp {
+        margin-top: 16px;
+    }
 }
 
 .p-tabs_wrap,
