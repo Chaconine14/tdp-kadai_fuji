@@ -84,3 +84,11 @@
         width: 16px;
     }
 }
+
+.c-anchor-nav.p-recruit_nav {
+    padding: 0 80px;
+
+    @include variables.media-sp {
+        padding: 0 24px;
+    }
+}

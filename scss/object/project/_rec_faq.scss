@@ -1,0 +1,145 @@
+@use "../../foundation/variables";
+
+
+.p-faq {
+    padding: 0 120px;
+
+    @include variables.media-tb {
+        padding: 0 80px;
+    }
+
+    @include variables.media-sp {
+        padding: 0;
+    }
+}
+
+.p-faq__inner {
+    background-color: variables.$color-light-green;
+    border-radius: 24px;
+    padding: 80px 160px;
+
+    @include variables.media-md {
+        padding: 80px;
+    }
+
+    @include variables.media-sp {
+        padding: 40px 24px;
+    }
+
+    .c-ttl {
+        margin-top: 0;
+    }
+
+}
+
+.p-faq__cont {
+    border-bottom: solid 1px variables.$color-light-beige;
+}
+
+.p-faq__cont:last-child {
+    border-bottom: none;
+}
+
+.p-faq__q span {
+    background-color: variables.$color-green;
+}
+
+.p-faq__a span {
+    background-color: variables.$color-orange;
+}
+
+.p-faq__q,
+.p-faq__a {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    //追加
+    justify-content: space-between;
+
+
+    span {
+        font-size: 1.6rem;
+        color: variables.$color-white;
+
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        justify-content: center; // 左右中央
+        align-items: center; // 上下中央
+        flex-shrink: 0; // 必要なら縮まないように
+    }
+}
+
+.p-faq__q {
+    cursor: pointer;
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+
+        @include variables.media-sp {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding-right: 16px;
+        }
+    }
+}
+
+.p-faq__q-ttl,
+.p-faq__a-cont {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.p-faq__a-cont {
+    @include variables.media-sp {
+
+        align-items: flex-start;
+    }
+}
+
+// /////////////////////////////
+
+.p-faq__icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.p-faq__icon span {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: variables.$color-black;
+    transform: translate(-50%, -50%);
+    transition: transform .3s;
+    border-radius: 0;
+}
+
+
+// 縦棒
+.p-faq__icon span:first-child {
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: transform .3s ease;
+}
+
+// 横棒
+.p-faq__icon span:last-child {
+    transform: translate(-50%, -50%);
+}
+
+.p-faq__a {
+    display: none;
+}
+
+.p-faq__q.is-open .p-faq__icon span:first-child {
+    transform: translate(-50%, -50%) rotate(0deg);
+}

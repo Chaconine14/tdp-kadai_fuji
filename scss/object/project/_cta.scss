@@ -119,3 +119,12 @@
         }
     }
 }
+
+
+.p-cta__gap {
+    margin-top: 120px;
+
+    @include variables.media-sp {
+        margin-top: 60px;
+    }
+}

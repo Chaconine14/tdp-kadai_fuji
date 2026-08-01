@@ -1,0 +1,56 @@
+@use "../../foundation/variables";
+
+.p-benefit {
+    padding: 120px 200px;
+
+    @include variables.media-tb {
+        padding: 80px;
+    }
+
+    @include variables.media-sp {
+        padding: 60px 24px;
+    }
+
+    .c-ttl {
+        margin-top: 0;
+    }
+}
+
+.p-benefit__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 40px;
+
+    @include variables.media-tb {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include variables.media-sp {
+        gap: 16px 40px;
+    }
+}
+
+.p-benefit__item {
+    border: 1px solid variables.$color-dark-beige;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        width: 60px;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+
+        @include variables.media-sp {
+            width: 40px;
+        }
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+}

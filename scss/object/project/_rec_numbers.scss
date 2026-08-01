@@ -1,0 +1,62 @@
+@use "../../foundation/variables";
+
+
+.p-numbers {
+    padding: 120px;
+
+    @include variables.media-tb {
+        padding: 40px;
+    }
+
+    .c-ttl {
+        margin-top: 0;
+    }
+}
+
+.p-numbers__inner {
+    padding: 80px 100px;
+    background-color: variables.$color-light-green;
+    border-radius: 24px;
+
+    @include variables.media-sp {
+        padding: 40px 24px;
+    }
+}
+
+.p-numbers__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include variables.media-md {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include variables.media-sp {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.p-numbers__grid-item {
+
+    place-items: center;
+
+    background-color: variables.$color-white;
+    border-radius: 16px;
+    text-align: center;
+    padding: 20px;
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    img {
+        height: 70px;
+        margin: 20px 0 8px;
+    }
+
+    span {
+        font-size: 4.8rem;
+        font-weight: 700;
+    }
+}

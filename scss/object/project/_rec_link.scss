@@ -1,0 +1,53 @@
+@use "../../foundation/variables";
+
+.p-recruit__links {
+    display: flex;
+    padding: 80px 200px;
+    gap: 40px;
+
+    @include variables.media-md {
+        padding: 80px;
+    }
+
+    @include variables.media-sp {
+        padding: 40px 24px;
+        flex-direction: column;
+    }
+}
+
+
+.p-recruit__link-item01 {
+    background: center center / cover url(../../../images/recruit/link01.jpg) no-repeat;
+}
+
+.p-recruit__link-item02 {
+    background: center center / cover url(../../../images/recruit/link02.jpg) no-repeat;
+}
+
+.p-recruit__link-item {
+    flex: 1;
+    min-height: 250px;
+    border-radius: 16px;
+
+    @include variables.media-sp {
+        min-height: 180px;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 280px;
+
+        @include variables.media-sp {
+            min-height: 180px;
+        }
+    }
+
+    p {
+        background-color: #FCFBF8CC;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+}

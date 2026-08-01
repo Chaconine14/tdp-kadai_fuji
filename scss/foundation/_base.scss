@@ -33,7 +33,6 @@ p {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.7;
-    color: variables.$color-black;
 }
 
 small {
@@ -49,6 +48,7 @@ h5,
 h6,
 p {
     margin: 0;
+    color: variables.$color-black;
 }
 
 img {

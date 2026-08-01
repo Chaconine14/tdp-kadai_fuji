@@ -15,6 +15,10 @@
         align-items: center;
     }
 
+    @include variables.media-sp {
+        gap: 20px;
+    }
+
     img {
         width: 100%;
         display: block;
@@ -47,4 +51,15 @@
 .p-message__txt-area__name {
     display: block;
     text-align: right;
+}
+
+.p-message h3 {
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+
+    @include variables.media-sp {
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 16px;
+    }
 }
