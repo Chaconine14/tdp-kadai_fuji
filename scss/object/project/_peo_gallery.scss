@@ -1,0 +1,19 @@
+@use "../../foundation/variables";
+
+
+.p-gallery {
+    padding: 120px 200px;
+}
+
+.p-gallery__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 40px;
+
+    img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+}

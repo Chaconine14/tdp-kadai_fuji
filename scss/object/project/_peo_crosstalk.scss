@@ -1,0 +1,64 @@
+@use "../../foundation/variables";
+
+.p-crosstalk {
+    background-color: variables.$color-white-beige;
+    padding: 80px 200px;
+    margin-top: 80px;
+}
+
+.p-crosstalk__inner {
+    background-color: variables.$color-white;
+    padding: 40px;
+    border-radius: 24px;
+}
+
+.p-crosstalk__inner>p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.p-crosstalk__people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+
+}
+
+.p-crosstalk__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 120px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+.p-crosstalk__cont {
+
+    h3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        border-bottom: 1px solid variables.$color-light-beige;
+        padding: 40px 0 4px 0;
+    }
+}
+
+.p-crosstalk__comment {
+    display: flex;
+    align-items: flex-start;
+    margin: 16px 0;
+
+
+}
+
+.p-crosstalk__comment p:first-child {
+    width: 10%;
+    flex-shrink: 0;
+}
