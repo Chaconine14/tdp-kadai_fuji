@@ -10,6 +10,12 @@ body {
   background-color: #FCFBF8;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -2801,6 +2807,16 @@ body.is-open {
   flex: 2;
   margin-top: -10%;
 }
+@media (max-width: 1024px) {
+  .p-interview__img {
+    margin-top: -100%;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__img {
+    margin-top: -250px;
+  }
+}
 .p-interview__img img {
   width: 100%;
   aspect-ratio: 3/4;
@@ -2808,9 +2824,36 @@ body.is-open {
      object-fit: cover;
   border-radius: 16px;
 }
+@media (max-width: 1300px) {
+  .p-interview__img img {
+    min-width: 350px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-interview__img img {
+    border-radius: 24px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__img img {
+    min-width: 0;
+  }
+}
 
 .p-interview__txt {
   flex: 3;
+}
+@media (max-width: 1300px) {
+  .p-interview__txt {
+    min-width: 460px;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__txt {
+    min-width: 0;
+  }
 }
 .p-interview__txt p {
   margin: 2rem 0;
@@ -2823,6 +2866,11 @@ body.is-open {
   font-size: 2.4rem;
   margin: 36px 0 40px;
 }
+@media (max-width: 768px) {
+  .p-interview__txt h3 {
+    margin: 16px 0;
+  }
+}
 
 .p-interview__sub-cont {
   background-color: #FCFBF8;
@@ -2832,13 +2880,39 @@ body.is-open {
   position: relative;
   z-index: 1000;
 }
+@media (max-width: 1300px) {
+  .p-interview__sub-cont {
+    width: 560px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-interview__sub-cont {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__sub-cont {
+    padding: 20px;
+    width: 90%;
+  }
+}
 .p-interview__sub-cont h4 {
   font-size: 2rem;
   color: #597130;
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .p-interview__sub-cont h4 {
+    text-align: center;
+  }
+}
 .p-interview__sub-cont table {
   border-collapse: collapse;
+}
+@media (max-width: 768px) {
+  .p-interview__sub-cont table {
+    margin: 0 auto;
+  }
 }
 .p-interview__sub-cont th,
 .p-interview__sub-cont td {
@@ -2858,6 +2932,23 @@ body.is-open {
   padding: 0 120px;
   margin-top: 15%;
 }
+@media (max-width: 1300px) {
+  .p-interview__odd {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-interview__odd {
+    padding: 0;
+    margin-top: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__odd {
+    padding-bottom: 40px;
+    margin-top: 0;
+  }
+}
 
 .p-interview__odd .p-interview__inner {
   display: flex;
@@ -2869,16 +2960,70 @@ body.is-open {
   margin: 0 auto 0 -120px;
   border-radius: 0 24px 24px 0;
 }
+@media (max-width: 1300px) {
+  .p-interview__odd .p-interview__inner {
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-interview__odd .p-interview__inner {
+    flex-direction: column;
+    margin: 0;
+    padding: 40px;
+    border-radius: 24px;
+    padding: 40px 80px 200px;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__odd .p-interview__inner {
+    padding: 40px 24px 380px;
+    margin-top: 280px;
+  }
+}
 
 .p-interview__odd .p-interview__sub-cont {
   margin: -80px -120px 0 auto;
   border-radius: 24px 0 0 24px;
   border-right: none;
 }
+@media (max-width: 1300px) {
+  .p-interview__odd .p-interview__sub-cont {
+    margin: -80px -80px 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .p-interview__odd .p-interview__sub-cont {
+    border-radius: 24px;
+    margin: -180px auto 0 auto;
+    border: 3px solid #597130;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__odd .p-interview__sub-cont {
+    margin: -374px auto 0 auto;
+  }
+}
 
 .p-interview__even {
   padding: 0 120px;
   margin-top: 15%;
+}
+@media (max-width: 1300px) {
+  .p-interview__even {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-interview__even {
+    padding: 0;
+    margin-top: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__even {
+    margin-top: 290px;
+    padding-bottom: 40px;
+  }
 }
 
 .p-interview__even .p-interview__inner {
@@ -2887,19 +3032,55 @@ body.is-open {
   gap: 60px;
   position: relative;
   background: #597130;
-  padding: 40px 40px 120px 120px;
+  padding: 40px 120px 120px 40px;
   margin: 0 -120px 0 auto;
   border-radius: 24px 0 0 24px;
+}
+@media (max-width: 1300px) {
+  .p-interview__even .p-interview__inner {
+    gap: 20px;
+    margin: 0 -80px 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .p-interview__even .p-interview__inner {
+    flex-direction: column;
+    margin: 0;
+    border-radius: 24px;
+    padding: 40px 80px 200px;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__even .p-interview__inner {
+    padding: 40px 24px 380px;
+  }
 }
 
 .p-interview__even .p-interview__img {
   order: 1;
+}
+@media (max-width: 1024px) {
+  .p-interview__even .p-interview__img {
+    order: unset;
+  }
 }
 
 .p-interview__even .p-interview__sub-cont {
   margin: -80px auto 0 -120px;
   border-radius: 0 24px 24px 0;
   border-left: none;
+}
+@media (max-width: 1024px) {
+  .p-interview__even .p-interview__sub-cont {
+    border-radius: 24px;
+    margin: -180px auto 0 auto;
+    border: 3px solid #597130;
+  }
+}
+@media (max-width: 768px) {
+  .p-interview__even .p-interview__sub-cont {
+    margin: -374px auto 0 auto;
+  }
 }
 
 .p-interview__sub-cont__item {
@@ -2919,6 +3100,7 @@ body.is-open {
   color: #FCFBF8;
   font-size: 1.6rem;
   font-weight: 700;
+  flex-shrink: 0;
 }
 .p-interview__sub-cont__item h5 {
   font-size: 1.6rem;
@@ -2935,16 +3117,41 @@ span.p-interview__check-icon {
   padding: 80px 200px;
   margin-top: 80px;
 }
+@media (max-width: 1300px) {
+  .p-crosstalk {
+    padding: 40px 80px;
+  }
+}
+@media (max-width: 768px) {
+  .p-crosstalk {
+    padding: 40px 24px;
+  }
+}
+@media (max-width: 768px) {
+  .p-crosstalk .c-ttl {
+    margin-top: 0;
+  }
+}
 
 .p-crosstalk__inner {
   background-color: #FCFBF8;
   padding: 40px;
   border-radius: 24px;
 }
+@media (max-width: 768px) {
+  .p-crosstalk__inner {
+    padding: 24px;
+  }
+}
 
 .p-crosstalk__inner > p {
   text-align: center;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .p-crosstalk__inner > p {
+    margin-bottom: 20px;
+  }
 }
 
 .p-crosstalk__people {
@@ -2953,12 +3160,34 @@ span.p-interview__check-icon {
   justify-content: center;
   gap: 120px;
 }
+@media (max-width: 1024px) {
+  .p-crosstalk__people {
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .p-crosstalk__people {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
 
 .p-crosstalk__profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .p-crosstalk__profile {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto auto;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    align-items: center;
+  }
 }
 .p-crosstalk__profile img {
   width: 120px;
@@ -2967,6 +3196,24 @@ span.p-interview__check-icon {
      object-fit: cover;
   border-radius: 50%;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .p-crosstalk__profile img {
+    grid-row: 1/3;
+    width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-crosstalk__profile p:first-of-type {
+    align-self: end;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-crosstalk__profile p:last-of-type {
+    align-self: start;
+  }
 }
 
 .p-crosstalk__cont h3 {
@@ -2986,15 +3233,46 @@ span.p-interview__check-icon {
   width: 10%;
   flex-shrink: 0;
 }
+@media (max-width: 768px) {
+  .p-crosstalk__comment p:first-child {
+    min-width: 50px;
+  }
+}
 
 .p-gallery {
   padding: 120px 200px;
+}
+@media (max-width: 1300px) {
+  .p-gallery {
+    padding: 80px 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .p-gallery {
+    padding: 0 80px 80px;
+  }
+}
+@media (max-width: 768px) {
+  .p-gallery {
+    padding: 0 24px 40px;
+  }
 }
 
 .p-gallery__wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px 40px;
+}
+@media (max-width: 1300px) {
+  .p-gallery__wrap {
+    gap: 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .p-gallery__wrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
 }
 .p-gallery__wrap img {
   width: 100%;

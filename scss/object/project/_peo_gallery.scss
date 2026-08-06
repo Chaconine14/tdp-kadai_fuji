@@ -3,12 +3,33 @@
 
 .p-gallery {
     padding: 120px 200px;
+
+    @include variables.media-md {
+        padding: 80px 120px;
+    }
+
+    @include variables.media-tb {
+        padding: 0 80px 80px;
+    }
+
+    @include variables.media-sp {
+        padding: 0 24px 40px;
+    }
 }
 
 .p-gallery__wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 80px 40px;
+
+    @include variables.media-md {
+        gap: 40px 20px;
+    }
+
+    @include variables.media-sp {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
 
     img {
         width: 100%;

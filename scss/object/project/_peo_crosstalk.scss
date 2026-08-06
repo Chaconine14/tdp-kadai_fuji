@@ -4,17 +4,39 @@
     background-color: variables.$color-white-beige;
     padding: 80px 200px;
     margin-top: 80px;
+
+    @include variables.media-md {
+        padding: 40px 80px;
+    }
+
+    @include variables.media-sp {
+        padding: 40px 24px;
+    }
+
+    .c-ttl {
+        @include variables.media-sp {
+            margin-top: 0;
+        }
+    }
 }
 
 .p-crosstalk__inner {
     background-color: variables.$color-white;
     padding: 40px;
     border-radius: 24px;
+
+    @include variables.media-sp {
+        padding: 24px;
+    }
 }
 
 .p-crosstalk__inner>p {
     text-align: center;
     margin-bottom: 40px;
+
+    @include variables.media-sp {
+        margin-bottom: 20px;
+    }
 }
 
 .p-crosstalk__people {
@@ -22,6 +44,16 @@
     align-items: center;
     justify-content: center;
     gap: 120px;
+
+    @include variables.media-tb {
+        gap: 40px;
+    }
+
+    @include variables.media-sp {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 
 }
 
@@ -31,12 +63,40 @@
     align-items: center;
     justify-content: center;
 
+    @include variables.media-sp {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 16px;
+        align-items: center;
+    }
+
+
     img {
         width: 120px;
         aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 50%;
         overflow: hidden;
+
+        @include variables.media-sp {
+            grid-row: 1 / 3;
+            width: 60px;
+        }
+    }
+}
+
+
+
+.p-crosstalk__profile p:first-of-type {
+    @include variables.media-sp {
+        align-self: end;
+    }
+}
+
+.p-crosstalk__profile p:last-of-type {
+    @include variables.media-sp {
+        align-self: start;
     }
 }
 
@@ -61,4 +121,8 @@
 .p-crosstalk__comment p:first-child {
     width: 10%;
     flex-shrink: 0;
+
+    @include variables.media-sp {
+        min-width: 50px;
+    }
 }
