@@ -2189,6 +2189,7 @@ body.is-open {
   color: #2E2C2A;
   border: 1px solid #8A847E;
   font-size: 2rem;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .p-tab {
