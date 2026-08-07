@@ -65,15 +65,22 @@
         @include variables.media-sp {
             min-width: auto;
         }
-
-
     }
-
 
 
     tr:last-child td,
     tr:last-child th {
         border-bottom: none;
+
+    }
+}
+
+
+.p-company__table {
+    tr:last-child th {
+        @include variables.media-sp {
+            border-bottom: 1px solid variables.$color-green;
+        }
     }
 }
 

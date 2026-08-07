@@ -1748,6 +1748,12 @@ body.is-open {
 }
 
 @media (max-width: 768px) {
+  .p-company__table tr:last-child th {
+    border-bottom: 1px solid #597130;
+  }
+}
+
+@media (max-width: 768px) {
   .p-company__table th br {
     display: none;
   }
@@ -2027,6 +2033,7 @@ body.is-open {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .p-access__icon {
