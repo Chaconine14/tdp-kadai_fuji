@@ -16,7 +16,7 @@
 }
 
 .p-cta__contact {
-    background-image: url(/~26G_miyauchi/tdp-kadai_fuji/images/cta_contact.jpg);
+    background-image: url(../images/cta_contact.jpg);
     border-right: solid 1px variables.$color-white;
 
     @include variables.media-sp {
@@ -26,7 +26,7 @@
 }
 
 .p-cta__recruit {
-    background-image: url(/~26G_miyauchi/tdp-kadai_fuji/images/cta_recruit.jpg);
+    background-image: url(../images/cta_recruit.jpg);
 }
 
 .p-cta__contact::before,
