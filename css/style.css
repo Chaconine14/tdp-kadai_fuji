@@ -533,7 +533,7 @@ body.is-open {
   width: 0.2rem;
   height: 2rem;
   margin: 0 4rem;
-  background: url("../images/anchor-link_dots.png") center/contain no-repeat;
+  background: url("/~26G_miyauchi/tdp-kadai_fuji/images/anchor-link_dots.png") center/contain no-repeat;
 }
 @media (max-width: 1024px) {
   .c-anchor-nav__item:not(:last-child)::after {
@@ -951,7 +951,7 @@ body.is-open {
 }
 
 .p-cta__contact {
-  background-image: url(../../../images/cta_contact.jpg);
+  background-image: url(/~26G_miyauchi/tdp-kadai_fuji/images/cta_contact.jpg);
   border-right: solid 1px #FCFBF8;
 }
 @media (max-width: 768px) {
@@ -962,7 +962,7 @@ body.is-open {
 }
 
 .p-cta__recruit {
-  background-image: url(../../../images/cta_recruit.jpg);
+  background-image: url(/~26G_miyauchi/tdp-kadai_fuji/images/cta_recruit.jpg);
 }
 
 .p-cta__contact::before,
@@ -1066,7 +1066,7 @@ body.is-open {
 
 .p-page-header {
   height: 280px;
-  background: center center/cover url(../../../images/page-header.jpg) no-repeat;
+  background: center center/cover url(/~26G_miyauchi/tdp-kadai_fuji/images/page-header.jpg) no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1548,7 +1548,7 @@ body.is-open {
 }
 
 .p-philosophy {
-  background: center center/cover url(../../../images/company/philosophy.jpg) no-repeat;
+  background: center center/cover url(/~26G_miyauchi/tdp-kadai_fuji/images/company/philosophy.jpg) no-repeat;
   padding: 80px;
   margin-top: 120px;
 }
@@ -2413,7 +2413,7 @@ body.is-open {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background: url("../../../images/recruit/check.svg") no-repeat center/contain;
+  background: url("/~26G_miyauchi/tdp-kadai_fuji/images/recruit/check.svg") no-repeat center/contain;
 }
 
 .p-work-reason__cont:nth-child(odd) {
@@ -2802,11 +2802,11 @@ body.is-open {
 }
 
 .p-recruit__link-item01 {
-  background: center center/cover url(../../../images/recruit/link01.jpg) no-repeat;
+  background: center center/cover url(/~26G_miyauchi/tdp-kadai_fuji/images/recruit/link01.jpg) no-repeat;
 }
 
 .p-recruit__link-item02 {
-  background: center center/cover url(../../../images/recruit/link02.jpg) no-repeat;
+  background: center center/cover url(/~26G_miyauchi/tdp-kadai_fuji/images/recruit/link02.jpg) no-repeat;
 }
 
 .p-recruit__link-item {
@@ -3143,7 +3143,7 @@ body.is-open {
 }
 
 span.p-interview__check-icon {
-  background: center center/cover url(../../../images/people/check.svg) no-repeat;
+  background: center center/cover url(/~26G_miyauchi/tdp-kadai_fuji/images/people/check.svg) no-repeat;
   background-color: unset;
 }
 
