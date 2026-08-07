@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>お問い合わせ｜富士誠食株式会社</title>
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="stylesheet" href="/css/ress.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./slick/slick.css">
+	<link rel="stylesheet" href="./slick/slick-theme.css">
+
+</head>
+
+<body>
+
+	<header class="l-header">
+		<h1>
+			<a href="/"><img src="images/fuji-seisyoku.svg" alt="富士誠食株式会社のロゴ"></a>
+		</h1>
+
+		<button class="l-header__hamburger js-hamburger" aria-label="メニューを開く">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<nav class="l-header__nav js-gnav" aria-label="グローバルナビゲーション">
+			<ul class="js-gnav__ul">
+				<li><a href="#">トップ</a></li>
+				<li><a href="#">事業内容</a></li>
+				<li><a href="#">会社情報</a></li>
+				<li><a href="#">採用情報</a>
+					<ul class="l-header__nav__sub js-gnav__sub">
+						<li><a href="#">人を知る</a></li>
+						<li><a href="#">募集要項</a></li>
+					</ul>
+				</li>
+				<li><a href="#">お問い合わせ</a></li>
+			</ul>
+		</nav>
+
+		<nav class="l-header__drawer js-drawer">
+			<ul>
+				<li><a href="#">トップ</a></li>
+				<li><a href="#">事業内容</a></li>
+				<li><a href="#">会社情報</a></li>
+				<li><a href="#">採用情報</a>
+					<ul class="l-header__drawer__sub">
+						<li><a href="#">> 人を知る</a></li>
+						<li><a href="#">> 募集要項</a></li>
+					</ul>
+				</li>
+				<li><a href="#">お問い合わせ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<div class="p-page-header">
+			<span class="p-page-header__en">Contact</span>
+			<h2 class="p-page-header__title">お問い合わせ</h2>
+		</div>
+
+		<nav class="c-breadcrumb" aria-label="パンくず">
+			<ol class="c-breadcrumb__list">
+				<li><a href="/">TOP</a></li>
+				<span>></span>
+				<li>お問い合わせ</li>
+			</ol>
+		</nav>
+
+
+
+
+		<section class="p-contact">
+
+
+			<div class="p-contact_aco-ttl js-contact is-open">
+				<h3>見学予約<img src="./images/contact/contact-icon01.svg" alt="見学予約のアイコン"></h3>
+				<span class="p-contact__icon">
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+
+			<div class="p-contact__form">
+				<form action="index.html" method="post">
+					<dl>
+						<div class="p-contact__item">
+							<dt><label for="visit-name">氏名</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="text" id="visit-name" name="name" class="p-contact__txt-s"
+									placeholder="例）山田太郎">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="visit-kana">ふりがな</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="text" id="visit-kana" name="kana" class="p-contact__txt-s"
+									placeholder="例）やまだたろう">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="visit-mail">メールアドレス</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="email" id="visit-mail" name="mail" class="p-contact__txt-m"
+									placeholder="例）yamada@example.com">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="visit-tel">電話番号</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="tel" id="visit-tel" name="tel" maxlength="13"
+									class="p-contact__txt-s" placeholder="例）09012345678">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="visit-shop">希望店舗</label></dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<select name="shop" id="visit-shop">
+									<option value="">店舗を選択してください</option>
+									<option value="多摩テクノ工場食堂（東京）">多摩テクノ工場食堂（東京）</option>
+									<option value="〇〇工場食堂（大阪）">〇〇工場食堂（大阪）</option>
+									<option value="〇〇会社　カフェテリア（東京）">〇〇会社　カフェテリア（東京）</option>
+								</select>
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="visit-date01">希望日（第一希望）</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="date" id="visit-date01" name="visit-date01">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="visit-date02">希望日（第二希望）</label></dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<input type="date" id="visit-date02" name="visit-date02">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="visit-date03">希望日（第三希望）</label></dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<input type="date" id="visit-date03" name="visit-date03">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="visit-message">ご質問など</label></dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<textarea id="visit-message" name="message" placeholder="ご質問やご要望がございましたらご記入ください"
+									class="p-contact__txt-box"></textarea>
+							</dd>
+						</div>
+
+
+					</dl>
+
+					<button type="submit" class="c-btn__orange">
+						入力内容を確認する
+					</button>
+
+
+				</form>
+
+				<p class="p-contact__privacy">※<a href="/privacy.html">プライバシーポリシー</a>をお読みいただき、<br
+						class="u-br_sp">同意の上お問い合わせください。</p>
+
+			</div>
+
+		</section>
+
+
+
+
+
+
+
+
+		<section class="p-contact">
+
+
+			<div class="p-contact_aco-ttl js-contact">
+				<h3>採用エントリー<img src="./images/contact/contact-icon02.svg" alt="採用エントリーのアイコン"></h3>
+				<span class="p-contact__icon">
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+
+			<div class="p-contact__form">
+				<form action="index.html" method="post" enctype="multipart/form-data">
+					<dl>
+						<div class="p-contact__item">
+							<dt><label for="entry-name">氏名</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="text" id="entry-name" name="name" class="p-contact__txt-s"
+									placeholder="例）山田太郎">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="entry-kana">ふりがな</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="text" id="entry-kana" name="kana" class="p-contact__txt-s"
+									placeholder="例）やまだたろう">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="entry-mail">メールアドレス</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="email" id="entry-mail" name="mail" class="p-contact__txt-m"
+									placeholder="例）yamada@example.com">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="entry-tel">電話番号</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="tel" id="entry-tel" name="tel" maxlength="13"
+									class="p-contact__txt-s" placeholder="例）09012345678">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="entry-place">希望勤務地</label></dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<input required type="text" id="entry-place" name="place" class="p-contact__txt-m"
+									placeholder="例）東京都">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="entry-job-type">希望職種</label></dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<select name="job-type" id="entry-job-type">
+									<option value="">職種を選択してください</option>
+									<option value="調理師">調理師</option>
+									<option value="調理補助アシスタント">調理補助アシスタント</option>
+									<option value="栄養士">栄養士</option>
+									<option value="その他">その他</option>
+								</select>
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="entry-pr">自己PR</label></dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<textarea id="entry-pr" name="pr-message" placeholder="あなたの強みや、当社で実現したいことなどをご記入ください"
+									class="p-contact__txt-box"></textarea>
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt>
+								<label for="entry-resume">履歴書</label>
+							</dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<input type="file" id="entry-resume" name="resume">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt>
+								<label for="entry-work-experience">職務経歴書</label>
+							</dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<input type="file" id="entry-work-experience" name="work-experience">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="entry-message">ご質問など</label></dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<textarea id="entry-message" name="message" placeholder="ご質問やご要望がございましたらご記入ください"
+									class="p-contact__txt-box"></textarea>
+							</dd>
+						</div>
+
+
+					</dl>
+
+					<button type="submit" class="c-btn__orange">
+						入力内容を確認する
+					</button>
+
+
+				</form>
+
+				<p class="p-contact__privacy">※<a href="/privacy.html">プライバシーポリシー</a>をお読みいただき、 <br
+						class="u-br_sp">同意の上お問い合わせください。</p>
+
+			</div>
+
+		</section>
+
+
+
+
+
+		<section class="p-contact">
+
+
+			<div class="p-contact_aco-ttl js-contact">
+				<h3>その他のお問い合わせ<img src="./images/contact/contact-icon03.svg" alt="ビジネスマンのアイコン"></h3>
+				<span class="p-contact__icon">
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+
+			<div class="p-contact__form">
+				<form action="index.html" method="post" enctype="multipart/form-data">
+					<dl>
+
+						<div class="p-contact__item">
+							<dt><label>お問い合わせ種別</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<div class="p-contact__radio">
+									<label><input required type="radio" name="type"
+											value="協業・パートナーについて">協業・パートナーについて</label>
+									<label><input type="radio" name="type" value="資料請求">資料請求</label>
+									<label><input type="radio" name="type" value="その他">その他</label>
+								</div>
+							</dd>
+						</div>
+
+
+						<div class="p-contact__item">
+							<dt><label for="contact-name">氏名</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="text" id="contact-name" name="name" class="p-contact__txt-s"
+									placeholder="例）山田太郎">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="contact-kana">ふりがな</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="text" id="contact-kana" name="kana" class="p-contact__txt-s"
+									placeholder="例）やまだたろう">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="contact-mail">メールアドレス</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="email" id="contact-mail" name="mail" class="p-contact__txt-m"
+									placeholder="例）yamada@example.com">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="contact-tel">電話番号</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<input required type="tel" id="contact-tel" name="tel" maxlength="13"
+									class="p-contact__txt-s" placeholder="例）09012345678">
+							</dd>
+						</div>
+
+						<div class="p-contact__item">
+							<dt><label for="contact-company">会社名</label></dt>
+							<dd>
+								<span class="c-required c-required--hidden">必須</span>
+								<input required type="text" id="contact-company" name="company" class="p-contact__txt-l"
+									placeholder="例）〇〇株式会社　〇〇部">
+							</dd>
+						</div>
+
+
+
+
+
+						<div class="p-contact__item">
+							<dt><label for="contact-message">お問い合わせ内容</label>
+								<span class="c-required__sp">必須</span>
+							</dt>
+							<dd>
+								<span class="c-required">必須</span>
+								<textarea id="contact-message" name="message" placeholder="ご質問やご相談内容をご記入ください"
+									class="p-contact__txt-box"></textarea>
+							</dd>
+						</div>
+
+
+					</dl>
+
+					<button type="submit" class="c-btn__orange">
+						入力内容を確認する
+					</button>
+
+
+				</form>
+
+				<p class="p-contact__privacy">※<a href="/privacy.html">プライバシーポリシー</a>をお読みいただき、<br
+						class="u-br_sp">同意の上お問い合わせください。</p>
+
+			</div>
+
+		</section>
+
+
+
+
+		<section class="p-cta-2col">
+			<article class="p-cta p-cta__contact">
+				<div class="p-cta__inner">
+					<h2>お問い合わせ</h2>
+					<h3>「働く人に喜ばれる食堂づくりを」</h3>
+					<p>運営体制の見直しや委託のご検討など、お気軽にご相談ください。
+						担当者が丁寧にお話をお伺いします。</p>
+					<a href="#" class="c-btn__orange">お問い合わせフォーム</a>
+				</div>
+			</article>
+			<article class="p-cta p-cta__recruit">
+				<div class="p-cta__inner">
+					<h2>採用について</h2>
+					<h3>「まずは職場見学からはじめませんか」</h3>
+					<p>実際の職場の雰囲気を見ていただき、疑問や不安にお答えします。
+						お気軽にお申し込みください。</p>
+					<div class="p-cta__recruit__btn">
+						<a href="#" class="c-btn__orange">見学予約をする</a>
+						<a href="#" class="c-btn__white">採用情報を見る</a>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<footer class="l-footer">
+		<div class="l-footer__wrap">
+			<div class="l-footer__profile">
+				<a href="/"><img src="images/fuji-seisyoku.svg" alt="富士誠食株式会社のロゴ"></a>
+				<address>
+					<p>富士誠食株式会社</p>
+					<p>東京都杉並区1-2-3</p>
+				</address>
+			</div>
+			<nav class="l-footer__nav" aria-label="フッターナビゲーション">
+				<ul>
+					<li><a href="#">事業内容</a></li>
+					<li><a href="#">会社情報</a></li>
+					<li><a href="#">採用情報</a>
+						<ul>
+							<li><a href="#">> 人を知る</a></li>
+							<li><a href="#">> 募集要項</a></li>
+						</ul>
+					</li>
+					<li><a href="#">お問い合わせ</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="l-footer__bottom">
+			<div class="l-footer__bottom__links">
+				<a href="#">プライバシーポリシー</a>
+				<!-- <a href="#">外部リンク</a> -->
+			</div>
+			<small>&copy; 2026 Fuji Seisyoku</small>
+		</div>
+
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./js/dropdown.js"></script>
+	<script src="./js/hamburger.js"></script>
+
+	<!-- <script>
+		$(".js-contact").on("click", function () {
+
+			$(this).toggleClass("is-open");
+			$(this).next(".p-contact__form").stop().slideToggle(300);
+
+		});
+	</script> -->
+
+	<script>
+
+		$(".p-contact__form").hide();
+
+		$(".js-contact.is-open")
+			.next(".p-contact__form")
+			.show();
+
+		$(".js-contact").on("click", function () {
+			$(this).toggleClass("is-open");
+			$(this).next(".p-contact__form").stop().slideToggle(300);
+		});
+	</script>
+
+</body>
+
+</html>

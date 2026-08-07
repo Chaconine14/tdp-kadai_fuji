@@ -8,3 +8,11 @@
         display: inline;
     }
 }
+
+.u-br_sp {
+    display: none;
+
+    @include variables.media-sp {
+        display: inline;
+    }
+}

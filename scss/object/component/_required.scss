@@ -1,0 +1,33 @@
+@use "../../foundation/variables";
+
+.c-required {
+    background-color: red;
+    color: variables.$color-white;
+    font-size: 1.2rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    flex-shrink: 0;
+
+    @include variables.media-sp {
+        display: none;
+    }
+}
+
+.c-required--hidden {
+    visibility: hidden;
+}
+
+
+.c-required__sp {
+    display: none;
+
+    background-color: red;
+    color: variables.$color-white;
+    font-size: 1.2rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+
+    @include variables.media-sp {
+        display: inline-block;
+    }
+}
