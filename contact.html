@@ -21,7 +21,7 @@
 
 	<header class="l-header">
 		<h1>
-			<a href="/"><img src="images/fuji-seisyoku.svg" alt="富士誠食株式会社のロゴ"></a>
+			<a href="/"><img src="/images/fuji-seisyoku.svg" alt="富士誠食株式会社のロゴ"></a>
 		</h1>
 
 		<button class="l-header__hamburger js-hamburger" aria-label="メニューを開く">
@@ -32,31 +32,31 @@
 
 		<nav class="l-header__nav js-gnav" aria-label="グローバルナビゲーション">
 			<ul class="js-gnav__ul">
-				<li><a href="#">トップ</a></li>
-				<li><a href="#">事業内容</a></li>
-				<li><a href="#">会社情報</a></li>
-				<li><a href="#">採用情報</a>
+				<li><a href="/">トップ</a></li>
+				<li><a href="/business.html">事業内容</a></li>
+				<li><a href="/company.html">会社情報</a></li>
+				<li><a href="/recruit/">採用情報</a>
 					<ul class="l-header__nav__sub js-gnav__sub">
-						<li><a href="#">人を知る</a></li>
-						<li><a href="#">募集要項</a></li>
+						<li><a href="/recruit/people/">人を知る</a></li>
+						<li><a href="/recruit/requirements/">募集要項</a></li>
 					</ul>
 				</li>
-				<li><a href="#">お問い合わせ</a></li>
+				<li><a href="/contact.html">お問い合わせ</a></li>
 			</ul>
 		</nav>
 
 		<nav class="l-header__drawer js-drawer">
 			<ul>
-				<li><a href="#">トップ</a></li>
-				<li><a href="#">事業内容</a></li>
-				<li><a href="#">会社情報</a></li>
-				<li><a href="#">採用情報</a>
+				<li><a href="/">トップ</a></li>
+				<li><a href="/business.html">事業内容</a></li>
+				<li><a href="/company.html">会社情報</a></li>
+				<li><a href="/recruit/">採用情報</a>
 					<ul class="l-header__drawer__sub">
-						<li><a href="#">> 人を知る</a></li>
-						<li><a href="#">> 募集要項</a></li>
+						<li><a href="/recruit/people/">> 人を知る</a></li>
+						<li><a href="/recruit/requirements/">> 募集要項</a></li>
 					</ul>
 				</li>
-				<li><a href="#">お問い合わせ</a></li>
+				<li><a href="/contact.html">お問い合わせ</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -79,11 +79,11 @@
 
 
 
-		<section class="p-contact">
+		<section class="p-contact" id="visit">
 
 
 			<div class="p-contact_aco-ttl js-contact is-open">
-				<h3>見学予約<img src="./images/contact/contact-icon01.svg" alt="見学予約のアイコン"></h3>
+				<h3>見学予約<img src="/images/contact/contact-icon01.svg" alt="見学予約のアイコン"></h3>
 				<span class="p-contact__icon">
 					<span></span>
 					<span></span>
@@ -209,11 +209,11 @@
 
 
 
-		<section class="p-contact">
+		<section class="p-contact" id="entry">
 
 
 			<div class="p-contact_aco-ttl js-contact">
-				<h3>採用エントリー<img src="./images/contact/contact-icon02.svg" alt="採用エントリーのアイコン"></h3>
+				<h3>採用エントリー<img src="/images/contact/contact-icon02.svg" alt="採用エントリーのアイコン"></h3>
 				<span class="p-contact__icon">
 					<span></span>
 					<span></span>
@@ -349,11 +349,11 @@
 
 
 
-		<section class="p-contact">
+		<section class="p-contact" id="contact">
 
 
 			<div class="p-contact_aco-ttl js-contact">
-				<h3>その他のお問い合わせ<img src="./images/contact/contact-icon03.svg" alt="ビジネスマンのアイコン"></h3>
+				<h3>その他のお問い合わせ<img src="/images/contact/contact-icon03.svg" alt="ビジネスマンのアイコン"></h3>
 				<span class="p-contact__icon">
 					<span></span>
 					<span></span>
@@ -475,7 +475,7 @@
 					<h3>「働く人に喜ばれる食堂づくりを」</h3>
 					<p>運営体制の見直しや委託のご検討など、お気軽にご相談ください。
 						担当者が丁寧にお話をお伺いします。</p>
-					<a href="#" class="c-btn__orange">お問い合わせフォーム</a>
+					<a href="/contact.html#contact" class="c-btn__orange">お問い合わせフォーム</a>
 				</div>
 			</article>
 			<article class="p-cta p-cta__recruit">
@@ -485,8 +485,8 @@
 					<p>実際の職場の雰囲気を見ていただき、疑問や不安にお答えします。
 						お気軽にお申し込みください。</p>
 					<div class="p-cta__recruit__btn">
-						<a href="#" class="c-btn__orange">見学予約をする</a>
-						<a href="#" class="c-btn__white">採用情報を見る</a>
+						<a href="/contact.html#visit" class="c-btn__orange">見学予約をする</a>
+						<a href="/contact.html#entry" class="c-btn__white">採用エントリー</a>
 					</div>
 				</div>
 			</article>
@@ -496,7 +496,7 @@
 	<footer class="l-footer">
 		<div class="l-footer__wrap">
 			<div class="l-footer__profile">
-				<a href="/"><img src="images/fuji-seisyoku.svg" alt="富士誠食株式会社のロゴ"></a>
+				<a href="/"><img src="/images/fuji-seisyoku.svg" alt="富士誠食株式会社のロゴ"></a>
 				<address>
 					<p>富士誠食株式会社</p>
 					<p>東京都杉並区1-2-3</p>
@@ -504,22 +504,21 @@
 			</div>
 			<nav class="l-footer__nav" aria-label="フッターナビゲーション">
 				<ul>
-					<li><a href="#">事業内容</a></li>
-					<li><a href="#">会社情報</a></li>
-					<li><a href="#">採用情報</a>
+					<li><a href="/business.html">事業内容</a></li>
+					<li><a href="/company.html">会社情報</a></li>
+					<li><a href="/recruit/">採用情報</a>
 						<ul>
-							<li><a href="#">> 人を知る</a></li>
-							<li><a href="#">> 募集要項</a></li>
+							<li><a href="/recruit/people/">> 人を知る</a></li>
+							<li><a href="/recruit/requirements/">> 募集要項</a></li>
 						</ul>
 					</li>
-					<li><a href="#">お問い合わせ</a></li>
+					<li><a href="/contact.html">お問い合わせ</a></li>
 				</ul>
 			</nav>
 		</div>
 		<div class="l-footer__bottom">
 			<div class="l-footer__bottom__links">
-				<a href="#">プライバシーポリシー</a>
-				<!-- <a href="#">外部リンク</a> -->
+				<a href="/privacy.html">プライバシーポリシー</a>
 			</div>
 			<small>&copy; 2026 Fuji Seisyoku</small>
 		</div>
@@ -527,31 +526,9 @@
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="./js/dropdown.js"></script>
-	<script src="./js/hamburger.js"></script>
-
-	<!-- <script>
-		$(".js-contact").on("click", function () {
-
-			$(this).toggleClass("is-open");
-			$(this).next(".p-contact__form").stop().slideToggle(300);
-
-		});
-	</script> -->
-
-	<script>
-
-		$(".p-contact__form").hide();
-
-		$(".js-contact.is-open")
-			.next(".p-contact__form")
-			.show();
-
-		$(".js-contact").on("click", function () {
-			$(this).toggleClass("is-open");
-			$(this).next(".p-contact__form").stop().slideToggle(300);
-		});
-	</script>
+	<script src="/js/dropdown.js"></script>
+	<script src="/js/hamburger.js"></script>
+	<script src="/js/contact_accordion.js"></script>
 
 </body>
 
