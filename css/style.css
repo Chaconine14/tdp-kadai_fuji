@@ -2835,6 +2835,7 @@ body.is-open {
   width: 100%;
   text-align: center;
   padding: 8px 0;
+  font-size: 2rem;
 }
 
 .p-interview__img {
