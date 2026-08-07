@@ -57,6 +57,10 @@ img {
   display: block;
 }
 
+button {
+  font-family: "M PLUS Rounded 1c", sans-serif, YuGothic, "Yu Gothic", "游ゴシック体", "游ゴシック", "Hiragino Kaku Gothic ProN", "HiraKakuPro-W3", "メイリオ", Meiryo, Verdana, sans-serif;
+}
+
 .l-header {
   height: 80px;
   display: flex;
@@ -892,6 +896,7 @@ body.is-open {
   .p-top-card__img-right .p-top-card__image img {
     border-radius: 24px;
     border: 6px solid #597130;
+    width: 100%;
   }
 }
 
@@ -932,6 +937,7 @@ body.is-open {
   .p-top-card__img-left .p-top-card__image img {
     border-radius: 24px;
     border: 6px solid #597130;
+    width: 100%;
   }
 }
 
@@ -2248,6 +2254,7 @@ body.is-open {
   padding: 40px 20px;
   border-collapse: collapse;
   width: 100%;
+  border-bottom: 1px solid #D4CBC1;
 }
 @media (max-width: 768px) {
   .p-tab__table {
@@ -2258,6 +2265,7 @@ body.is-open {
 .p-tab__table td {
   border: 1px solid #D4CBC1;
   padding: 8px 16px;
+  border-bottom: 0;
 }
 .p-tab__table th {
   background-color: #F5F2EB;
@@ -2478,7 +2486,7 @@ body.is-open {
 }
 .p-numbers__grid-item img {
   height: 70px;
-  margin: 20px 0 8px;
+  margin: 20px auto 8px;
 }
 .p-numbers__grid-item span {
   font-size: 4.8rem;

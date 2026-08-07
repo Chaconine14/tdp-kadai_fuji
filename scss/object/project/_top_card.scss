@@ -104,6 +104,7 @@
     @include variables.media-sp {
         border-radius: 24px;
         border: 6px solid variables.$color-green;
+        width: 100%;
     }
 }
 
@@ -142,6 +143,7 @@
     @include variables.media-sp {
         border-radius: 24px;
         border: 6px solid variables.$color-green;
+        width: 100%;
 
     }
 }
