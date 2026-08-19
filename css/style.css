@@ -1487,7 +1487,7 @@ body.is-open {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 }
 
 .p-message {
@@ -1733,7 +1733,7 @@ body.is-open {
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid #597130;
-  width: 20%;
+  width: 25%;
   min-width: 160px;
   font-weight: 500;
 }
