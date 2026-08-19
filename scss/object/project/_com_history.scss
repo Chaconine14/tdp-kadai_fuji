@@ -24,7 +24,7 @@
 
     @include variables.media-sp {
         grid-template-columns: 1fr;
-        padding-left: 50px;
+        padding-left: 30px;
     }
 
 
@@ -47,6 +47,10 @@
 
 .p-history__cont {
     padding-left: 8px;
+
+    @include variables.media-sp {
+        padding-left: 0;
+    }
 }
 
 //上の破線
@@ -75,7 +79,7 @@
     // left: 140px;
     left: calc(150px - 2px); //線の太さの分、左にずらす
 
-    top: 50%;
+    top: 0;
     bottom: 0;
     width: 4px; //線の太さ
     height: 100%;
@@ -85,6 +89,11 @@
     @include variables.media-sp {
         display: none;
     }
+}
+
+.p-history__item:first-child .p-history__cont::before {
+    height: 50%;
+    top: 50%;
 }
 
 //丸

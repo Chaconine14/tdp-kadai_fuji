@@ -58,11 +58,16 @@
         background-color: variables.$color-orange;
         border-radius: 50%;
         color: variables.$color-white;
-        padding: 8px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
         margin-right: 8px;
 
         @include variables.media-sp {
-            padding: 4px;
+            width: 28px;
+            height: 28px;
         }
     }
 
