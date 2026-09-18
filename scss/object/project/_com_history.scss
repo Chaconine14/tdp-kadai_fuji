@@ -172,9 +172,16 @@
         border-radius: 16px;
         aspect-ratio: 16 / 9;
         object-fit: cover; // はみ出した部分をトリミング
+        transition: .3s;
 
         @include variables.media-sp {
             border-radius: 8px;
         }
     }
+}
+
+
+.p-history__image-area a:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.75);
 }

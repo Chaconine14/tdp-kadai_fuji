@@ -60,11 +60,15 @@
 
 
 .p-top-card__content h2 {
-    margin: 0;
+    margin: 0 0 28px 0;
     font-size: 3.2rem;
 
-    @include variables.media-sp {
+    @include variables.media-tb {
         margin-bottom: 20px;
+    }
+
+
+    @include variables.media-sp {
         font-size: 2.4rem;
     }
 

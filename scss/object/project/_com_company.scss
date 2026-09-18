@@ -47,6 +47,7 @@
     td {
         border-bottom: 1px solid variables.$color-light-beige;
         font-weight: 400;
+        color: variables.$color-black;
 
         @include variables.media-sp {
             border-bottom: none;

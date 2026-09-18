@@ -7,11 +7,20 @@ html {
 
 body {
     margin: 0;
-    font-family: "M PLUS Rounded 1c", sans-serif, YuGothic, "Yu Gothic", "游ゴシック体", "游ゴシック", "Hiragino Kaku Gothic ProN", "HiraKakuPro-W3", "メイリオ", Meiryo, Verdana, sans-serif;
+    font-family: "M PLUS 1p", sans-serif;
     background-color: variables.$color-white;
 
 }
 
+main {
+
+    padding-top: 80px;
+
+    @include variables.media-tb {
+        padding-top: 0;
+    }
+
+}
 
 *,
 *::before,
@@ -62,6 +71,6 @@ img {
 }
 
 button {
-    font-family: "M PLUS Rounded 1c", sans-serif, YuGothic, "Yu Gothic", "游ゴシック体", "游ゴシック", "Hiragino Kaku Gothic ProN", "HiraKakuPro-W3", "メイリオ", Meiryo, Verdana, sans-serif;
+    font-family: "M PLUS 1p", sans-serif;
 
 }

@@ -36,5 +36,11 @@
         aspect-ratio: 16 / 9;
         border-radius: 16px;
         object-fit: cover;
+        transition: .3s;
     }
+}
+
+.p-gallery__wrap a:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.75);
 }
